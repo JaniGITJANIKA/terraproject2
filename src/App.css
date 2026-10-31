@@ -1,0 +1,33 @@
+.background {
+  background: linear-gradient(45deg, blue, black);
+}
+.background h1 {
+  color: white;
+}
+.background p {
+  color: white;
+}
+.memorycardstyle {
+  background-color: aqua;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.card-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.front, .back {
+  max-width: 100px;
+}
+.card {
+  position: relative;
+}
+.card img {
+  width: 100%;
+  display: block;
+  border: 2px solid white;
+  border-radius: 12px;
+}
