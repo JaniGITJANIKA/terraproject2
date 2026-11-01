@@ -1,0 +1,3 @@
+exclude:
+  - terra1projectandlearnreact/node_modules
+  - terra1projectandlearnreact/dist-ssr
