@@ -1,33 +1,461 @@
 .background {
   background: linear-gradient(45deg, blue, black);
 }
-.background h1 {
-  color: white;
-}
 .background p {
   color: white;
 }
 .memorycardstyle {
   background-color: aqua;
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
   justify-content: center;
 }
 .card-grid {
-  margin-top: 40px;
+  width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
-}
-.front, .back {
-  max-width: 100px;
+  grid-template-columns: repeat(4, minmax(0, 100px));
+  gap: 20px;
+  justify-content: center;
 }
 .card {
+  perspective: 1000px;
+  cursor: pointer;
+}
+.card > div {
   position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  transform-style: preserve-3d;
+  transition: transform 0.62s cubic-bezier(0.2, 0.75, 0.25, 1);
+}
+.card > .flipped {
+  transform: rotateY(180deg);
 }
 .card img {
   width: 100%;
+  height: 100%;
   display: block;
+  object-fit: cover;
   border: 2px solid white;
   border-radius: 12px;
+  box-sizing: border-box;
+  backface-visibility: hidden;
+  position: absolute;
+  inset: 0;
+}
+.card .front {
+  transform: rotateY(180deg);
+}
+
+.memorycardstyle {
+  background-color: rgb(50, 26, 26);
+  margin: 20px;
+  border-radius: 40px 10px;
+  padding: 20px;
+}
+.pict {
+  background: linear-gradient(lightblue, lightblue 85%,  green);
+  height: 400px;
+  position: relative;
+  border-radius: 20px;
+}
+.pict .tree {
+  position: absolute;
+  height: 250px;
+  bottom: 0;
+  right: 0;
+}
+.pict .sun {
+  position: absolute;
+  height: 150px;
+  right: 0;
+}
+.pict .mountain {
+  position: absolute;
+  height: 300px;
+  bottom: 0;
+  left: 0;
+}
+.pict .apple1 {
+  position: absolute;
+  height: 50px;
+  bottom: 100px;
+  right: 180px;
+}
+.pict .apple2 {
+  position: absolute;
+  height: 50px;
+  bottom: 60px;
+  right: 70px;
+}
+.pict .apple3 {
+  position: absolute;
+  height: 50px;
+  bottom: 0;
+  right: 0;
+} 
+.pict .bird1 {
+  position: absolute;
+  height: 60px;
+  right: 30%;
+}
+.pict .bird2 {
+  position: absolute;
+  height: 60px;
+  right: 50%;
+}
+.pict .bird3 {
+  position: absolute;
+  height: 60px;
+  right: 70%;
+}
+/* Direk van igy nem hiba hogy eltakarhatja a felho azért is tettem utolag a felhot hogy ne keljen Z index. */
+.pict .cloud1 {
+  position: absolute;
+  height: 80px;
+  right: 40%;
+}
+.pict .cloud2 {
+  position: absolute;
+  height: 80px;
+  right: 60%;
+}
+.pict .cloud3 {
+  position: absolute;
+  height: 80px;
+  right: 80%;
+}
+
+.nothing {
+  height: 400px;
+  background-color: blueviolet;
+}
+h2 {
+  color: white;
+  font-size: 1.8em;
+  padding: 20px;
+  background: linear-gradient(45deg, blue,lightblue);
+  margin: 20px 60px;
+  border-radius: 20px;
+}
+.texi {
+  background: rgb(98, 0, 255);
+  margin: 10px;
+  border-radius: 20px;
+  padding: 5px;
+}
+.teximg {
+  width: calc(100% - 40px);
+  max-width: 600px;
+  border-radius: 20px;
+  margin: 20px;
+  box-shadow: 5px 5px 5px black;
+}
+h1 {
+  line-height: 40px;
+  color: black;
+  background: linear-gradient(45deg,cyan,lightblue);
+  padding: 10px;
+  border-radius: 20px;
+  margin: 0 20px 10px 20px;
+}
+#contener {
+  max-width: 720px;
+  margin: 0 auto;
+}
+button {
+  font-size: 2em;
+  padding: 5px;
+  border-radius: 40px;
+}
+button:hover {
+  background: linear-gradient(45deg, rgb(90, 63, 63),gray);
+  box-shadow: 0 0 5px gray;
+}
+
+/* Csak azért mert van itt egy darab id hogy tudja hogy ismerem atol még hogy nem szoktam olyan gyakran használni. Olyan fáradt vagyok. */
+.win {
+  background: linear-gradient(orange,yellow);
+  margin: 10px;
+  border-radius: 20px;
+
+}
+.win p {
+  font-weight: bold;
+  color: black;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+.win img {
+  width: 30%;
+}
+.winx {
+  background: linear-gradient(45deg, orange, yellow);
+   padding: 5px;
+   margin: 5px;
+   border-radius: 24px;
+}
+.winx p {
+  color: black;
+}
+.paper {
+  background-color: white;
+  height: 500px;
+  width: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+.paper .block1 {
+  position: absolute;
+  background-color: gold;
+  width: 50px;
+  height: 100px;
+  right: 225px;
+  bottom: 0;
+}
+.paper .block2 {
+  position: absolute;
+  background-color:gold;
+  width: 200px;
+  height: 150px;
+  border-radius: 0 0 60px 60px;
+  bottom: 100px;
+  right: 150px;
+}
+.paper .block3 {
+  position: absolute;
+  background-color: gold;
+  width: 100px;
+  height: 50px;
+  border-radius: 60px 60px 0 0;
+  bottom: 0;
+  right: 200px;
+}
+.paper .block4 {
+  position: absolute;
+  background-color: gold;
+  width: 50px;
+  height: 25px;
+  bottom: 215px;
+  transform: rotate(-20deg);
+  right: 340px;
+}
+.paper .block5 {
+  position: absolute;
+  background-color: gold;
+  width: 25px;
+  height: 80px;
+  bottom: 150px;
+  right: 370px;
+}
+.paper .block6 {
+  position: absolute;
+  background-color: gold;
+  width: 25px;
+  height: 80px;
+  bottom: 150px;
+  right: 100px;
+}
+.paper .block7 {
+  position: absolute;
+  background-color: gold;
+  width: 50px;
+  height: 25px;
+  transform: rotate(20deg);
+  bottom: 140px;
+  right: 340px;
+}
+.paper .block8 {
+  position: absolute;
+  background-color: gold;
+  width: 50px;
+  height: 25px;
+  transform: rotate(-20deg);
+  bottom: 140px;
+  right: 110px;
+}
+.paper .block9 {
+  position: absolute;
+  background-color: gold;
+  width: 50px;
+  height: 25px;
+  transform: rotate(20deg);
+  bottom: 215px;
+  right: 110px;
+}
+.paper .WIN {
+  color: gold;
+  font-size: 100px;
+  position: absolute;
+  bottom: 350px;
+  right: 130px;
+}
+.paper .block11 {
+  position: absolute;
+  width: 300px;
+  height: 120px;
+  bottom: 300px;
+  right: 100px;
+  border-radius: 80px;
+  box-shadow: 0 0 30px gold;
+  transform: rotate(-6.7deg);
+
+}
+.paper .block12 {
+  position: absolute;
+  background-color: gold;
+  width: 75px;
+  height: 25px;
+  transform: rotate(45deg);
+  border-radius: 10px;
+  bottom: 420px;
+  right: 400px;
+}
+.paper .block13 {
+  position: absolute;
+  background-color: gold;
+  width: 75px;
+  height: 25px;
+  transform: rotate(-45deg);
+  border-radius: 10px;
+  bottom: 260px;
+  right: 400px;
+}
+.paper .block14 {
+  position: absolute;
+  background-color: gold;
+  width: 75px;
+  height: 25px;
+  transform: rotate(-45deg);
+  border-radius: 10px;
+  bottom: 440px;
+  right: 30px;
+}
+.paper .block15 {
+  position: absolute;
+  background-color: gold;
+  width: 75px;
+  height: 25px;
+  transform: rotate(45deg);
+  border-radius: 10px;
+  bottom: 260px;
+  right: 40px;
+}
+.paper .block16 {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-color: yellow;
+  border-radius: 100%;
+  bottom: 10px;
+  right: 10px;
+}
+.paper .block17 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 100%;
+  bottom: 55px;
+  right: 50px;
+}
+.paper .block18 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 100%;
+  bottom: 55px;
+  right: 25px;
+}
+.paper .block19 {
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  background-color: black;
+  border-radius: 0 0 20px 20px;
+  bottom: 30px;
+  right: 28px;
+} 
+.paper .block20 {
+  position: absolute;
+  height: 50px;
+  width: 30px;
+  background-color: yellow;
+  bottom: 20px;
+  right: 100px;
+  border-radius: 10px;
+}
+.paper table {
+  position: absolute;
+  border-spacing: 10px;
+  border: 5px solid black;
+  border-collapse: collapse;
+  bottom: 20px;
+  right: 112px;
+}
+.paper table td {
+  border: 5px solid black;
+  padding: 3px;
+}
+.paper .block21 {
+  position: absolute;
+  width: 12.5px;
+  height: 20px;
+  background-color: yellow;
+  border-radius: 12.5px 12.5px 0 0;
+  bottom: 60px;
+  right: 102.5px;
+}
+.paper .thankyou {
+  position: absolute;
+  color: black;
+  font-weight: bold;
+  bottom: 20px;
+  right: 320px;
+}
+
+
+
+
+@media (max-width: 480px) {
+  .card-grid {
+    grid-template-columns: repeat(3, minmax(0, 100px));
+    gap: 12px;
+  }
+
+}
+@media (max-width: 568px) {
+  .pict .tree {
+    height: 150px;
+  }
+  .pict .mountain {
+    height: 200px;
+  }
+  .pict .apple1 {
+    height: 30px;
+    bottom: 60px;
+    right: 110px;
+  }
+  .pict .apple2 {
+    height: 30px;
+    bottom: 30px;
+    right: 40px;
+  }
+  .pict .apple3 {
+    height: 30px;
+    bottom: 0;
+  }
+  .pict .sun {
+    height: 80px;
+  }
+  .pict .bird1,.pict .bird2,.pict .bird3 {
+    height: 30px;
+  }
+  .pict .cloud1,.pict .cloud2,.pict .cloud3 {
+    height: 40px;
+  }
 }
