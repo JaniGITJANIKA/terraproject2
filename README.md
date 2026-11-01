@@ -22,7 +22,7 @@ Egy React + Vite alapú memóriajáték, amelyben természetes elemeket kell pá
 ## 📁 Projekt szerkezete
 
 ```text
-terraproject2/
+memoriakartya/
 ├── public/
 │   ├── apple.jpg
 │   ├── bird.jpg
