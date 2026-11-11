@@ -132,8 +132,7 @@ function Tree() {
   return (
     <div>
   <h2>A fa</h2>
-  <p className='texi'>A fák fontosak a természet számára ezért kell rá vigyáznunk és meg próbálni minél kevesebbet kivágni mert nem csak az álatokm élethelyét vehetjük el hanem még ránk is veszélyes mert az termeli nekünk az oxigént az ad védelmet a felmelegedés ellen ezért ójvjuk a természetünket ne szemeteljünk és legyünk környezet tudatosak a papír mind két oldalát használjuk és azért is szoktak ültetni a városokban is fákat és a fáknak is köszönhető az élet.
-  </p>
+  <a href="https://janigitjanika.github.io/terraproject2plusz/index.html" target='blank' className='linkes'>A szövegért katintson ide. :)</a>
   <img className='teximg' src="tree.jpg" alt="Fa" />
   </div>
   )
@@ -143,7 +142,7 @@ function Sun() {
   return (
     <div>
       <h2>A nap</h2>
-      <p className='texi'>A nap is egy nagyon fontos eleme a naprendszerünknek mivel a nap nyújt nekünk hő energiát fényt és UV fényt ami anyira nem jó nekünk és ez azért van mert nagyon sokat szenyezük az ozon réteget amivel az keletkezik hogy felmelegszik a bolygó és nagyobb az UV fény amitől le égünk de nem csak hogy fáj hanem ellégé rák veszélyes is de a nap nélkül nem élnénk nem lenne nélküle hő vagy esetleg fény sem meg nem keringené körülöte.</p>
+      <a href="https://janigitjanika.github.io/terraproject2plusz/index.html" target='blank' className='linkes'>A szövegért katintson ide. :)</a>
       <img className='teximg' src="sun.jpg" alt="Nap" />
     </div>
   )
@@ -153,7 +152,7 @@ function Mountain() {
   return (
     <div>
       <h2>A hegy</h2>
-      <p className='texi'>A hegyek egy csomó hegy van mint pl a Mount Everest a leg magasabb hegy a Föld nevü bolygón és van egy nagyon hasznos szerepük hogy a fenti víz az ottfent van ami a víz szintet jól meg tudná tartani hogyha nem lenne ez a felmelegedés mert így most sajnos egyre kevesebb rajta a jég és a hó is ami a víz szint emelkedését eredményezi ami miatt sajnos alacsonan fekvő településeket el áraszt vízel ami ár vízet eredményez vagyis nem szabadna tovább melegednie a bolygónak hogyha meg szeretnénk tartani úgy a bolygót ahogyan van.</p>
+      <a href="https://janigitjanika.github.io/terraproject2plusz/index.html" target='blank' className='linkes'>A szövegért katintson ide. :)</a>
       <img className='teximg' src='mountain.jpg' alt='Hegy'/>
     </div>
   )
@@ -163,7 +162,7 @@ function Apple() {
   return (
     <div>
       <h2>Az alma</h2>
-      <p className='texi'>Az alma nem csak hogy finom hanem nagyon egéséges is és meg található benne az C vitamin az immunrendszerélt és az A vitamin a Bőr egéségének a védelmáben és meg található benne nem más mint a B vitamin ami jelentős mértékben tartalmaz B komplexet és egyébb vitaminokat amiket már kisebb mértékben találhatók meg benne egy Magyar mondás szerint vagy nem tudom de Magyaroszágon lehet hallani hogy minden nap egy alma az orvost távol tartja mert olyan egéséges de az alma lében előfordulhat túlzó cukor ami ugyan úgy nem jó az egéségre nézve meg hát mindent mértékel kell fogyasztani.</p>
+      <a href="https://janigitjanika.github.io/terraproject2plusz/index.html" target='blank' className='linkes'>A szövegért katintson ide. :)</a>
       <img className='teximg' src="apple.jpg" alt="Alma" />
     </div>
   )
@@ -173,7 +172,7 @@ function Bird() {
   return (
      <div>
         <h2>A madár</h2>
-        <p className='texi'>A madarak nagy szerepet játszanak az életünkben mint pl a tyúkok adják a tojásokat ami meg szoktunk enni és a természteti körforgásban is segítenek el kapni kisebb állatokat mint a sas és kb ennyi de vigyázni kell mert hogyha a villany poználra ha felszálnak akkor meg rázhatja őket az áram ami a halálukhoz vezethet vagyis valószínü akkor sajnos.</p>
+      <a href="https://janigitjanika.github.io/terraproject2plusz/index.html" target='blank' className='linkes'>A szövegért katintson ide. :)</a>
         <img className='teximg' src="bird.jpg" alt="Madár" />
      </div>
   )
@@ -183,9 +182,8 @@ function Cloud() {
   return (
     <div>
       <h2>A felhők</h2>
-      <p className='texi'>Fontos feladatuk van az eső szállítás miatt és az üvegház hatás vagy az ellen miatt mert ez fontos szerepet játszik a bolygó hőmérsékle3tére hogy süt a nap vagy az a csapadék miatt a növényeknek és még villámot is képes leadni ami miatt tüz kellethezhet de szerencsénkre a villám hárító elég el terjed ami a földbe vezeti a villámlást.
+      <a href="https://janigitjanika.github.io/terraproject2plusz/index.html" target='blank' className='linkes'>A szövegért katintson ide. :)</a>
       <img className='teximg' src="cloud.jpg" alt="Felhő" />
-      </p>
     </div>
   )
 }

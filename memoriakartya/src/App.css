@@ -418,7 +418,22 @@ button:hover {
   right: 320px;
 }
 
-
+.linkes {
+  background-color: blueviolet;
+  font-size: x-large;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: all 1s;
+  transform: scale(1);
+}
+.linkes:hover{
+  font-size: xx-large;
+  margin: 20px;
+  box-shadow: 0 0 10px pink;
+}
 
 
 @media (max-width: 480px) {
