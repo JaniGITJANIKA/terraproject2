@@ -45,6 +45,8 @@ memoriakartya/
 ├── README.md
 └── package-lock.json
 ```
+## Test
+https://janigitjanika.github.io/terraproject2/
 
 ## 🚀 Telepítés
 
